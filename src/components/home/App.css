@@ -1,3 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=DotGothic16&display=swap');
+@font-face {
+  font-family: "Game of Thrones";
+  src: url("../../media/Game\ of\ Thrones.ttf") format("truetype");
+}
+
 .App {
   text-align: center;
+  background-image: url('../../media/wood_1.png');
+  height: 100vh;
+  color: hsl(0, 0%, 100%);
+}
+
+.layout-col {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+}
+
+.App-header {
+  font-family: "Game of Thrones" !important;
+  font-size: 10vmin;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Instruction {
+  border-radius: 1vmin;
+  font-family: 'Carrois Gothic', sans-serif;
+  margin: 2.5vmin 0 1vmin 0;
+  width: 80vmin;
+  border-radius: 20px;
+  background: #222222;
+  box-shadow: 5px 5px 22px #161616, 5px 5px 22px #252525;
+}
+
+.Instruction ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.Instruction li {
+  font-family: 'DotGothic16', sans-serif;
+  text-align: left;
+}
+
+
+.fire {
+  background-position: center center;
+  vertical-align: middle;
+  margin-top: 4vmin;
+  
+}
+
+.fire:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.Blazing {
+  display: inline-block;
+  margin: 0;
+  color: rgb(58, 46, 36);
+  font-size: 5vmin;
+  letter-spacing: 1vmin;
+  text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 4px -5px 6px yellow, -4px -10px 10px yellow, 0 -10px 30px yellow;
+  animation: 2s Blazing infinite alternate linear;
+}
+
+@keyframes Blazing {
+  0% {
+    text-shadow: 0 1px 5px red, 0 0 30px red, 0 0 10px orange, 0 0 0 yellow, 0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
+  }
+  25% {
+    text-shadow: 0 3px 10px red, 0 0 30px red, 0 0 12px orange, 0 0 5px yellow, -2px -5px 5px yellow, 3px -10px 10px yellow, -4px -10px 10px yellow;
+  }
+  50% {
+    text-shadow: 0 3px 10px red, 0 0 20px red, 0 -5px 10px orange, -2px -5px 5px yellow, 3px -6px 10px yellow, -4px -6px 20px yellow, 2px -6px 10px rgba(255, 255, 0, 0.5);
+  }
+  75% {
+    text-shadow: 0 3px 10px red, 0 0 20px red, 0 -5px 10px orange, 3px -5px 5px yellow, -2px -5px 10px yellow, 2px -5px 10px rgba(255, 255, 0, 0.5), 0px -10px 40px rgba(255, 255, 0, 0)
+  }
+  100% {
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow, 0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
+  }
 }
