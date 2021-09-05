@@ -1,8 +1,6 @@
 import './App.css';
 import React from 'react';
 
-import Button from '@material-ui/core/Button';
-
 
 function App() {
   return (
@@ -23,7 +21,7 @@ function App() {
           </ul>
         </div>
         <div className='fire dark'>
-          <span class="Blazing" contenteditable="true">START</span>
+          <button className="Start-game-btn"><span class="Blazing">START</span></button>
         </div>
       </div>
     </div>
