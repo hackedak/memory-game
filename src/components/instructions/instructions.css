@@ -1,0 +1,32 @@
+
+.sword{
+    margin-right: 1vmin;
+}
+.sword img{
+    width : 2.2vmin;
+    height: 2.2vmin;
+}
+
+.Instruction {
+    border-radius: 1vmin;
+    font-family: 'Carrois Gothic', sans-serif;
+    
+    margin: 2.5vmin 0.5vmin;
+    padding: 2vmin 1vmin;
+    width: 80vmin;
+    border-radius: 20px;
+    background: #222222;
+    box-shadow: 5px 5px 22px #161616, 5px 5px 22px #252525;
+  
+  }
+  
+  .Instruction ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .Instruction li {
+    font-family: 'DotGothic16', sans-serif;
+    text-align: left;
+  }

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=DotGothic16&display=swap');
+
+@import url("./CommonStyles.css");
 @font-face {
   font-family: "Game of Thrones";
   src: url("../../media/Game\ of\ Thrones.ttf") format("truetype");
@@ -7,10 +9,12 @@
 .App {
   text-align: center;
   background-image: url('../../media/wood_1.png');
-  height: 100vh;
+  height: 100%;
   color: hsl(0, 0%, 100%);
 }
-
+.start-page{
+  height: inherit;
+}
 .layout-col {
   display: flex;
   flex-direction: column;
@@ -26,30 +30,6 @@
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.Instruction {
-  border-radius: 1vmin;
-  font-family: 'Carrois Gothic', sans-serif;
-  
-  margin: 2.5vmin 0.5vmin;
-  padding: 2vmin 1vmin;
-  width: 80vmin;
-  border-radius: 20px;
-  background: #222222;
-  box-shadow: 5px 5px 22px #161616, 5px 5px 22px #252525;
-
-}
-
-.Instruction ul {
-  list-style-type: none;
-  padding: 10px;
-  margin: 0;
-}
-
-.Instruction li {
-  font-family: 'DotGothic16', sans-serif;
-  text-align: left;
 }
 
 
@@ -69,19 +49,20 @@
 .Blazing {
   display: inline-block;
   margin: 0;
-  color: rgb(58, 46, 36);
-  font-size: 10vmin;
-  letter-spacing: 1vmin;
+  color: rgb(70, 61, 54);
   text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 4px -5px 6px yellow, -4px -10px 10px yellow, 0 -10px 30px yellow;
   animation: 2s Blazing infinite alternate linear;
  
 }
 
 .Start-game-btn{
+  font-size: 10vmin;
+  letter-spacing: 1vmin;
   background:transparent;
   border:none;
   transition: all 1s ease-in;
   transform: scale(1);
+  font-family: 'Carrois Gothic', sans-serif;
 }
 
 .Start-game-btn:active{
@@ -128,7 +109,7 @@
   .Instruction{
     margin: 2.5vmin 0;
   }
-  .Blazing{
+  .Start-game-btn{
     font-size: 7vmin;
   }
 
