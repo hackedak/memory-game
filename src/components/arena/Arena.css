@@ -36,8 +36,16 @@
 
 .card {
     width: 20vmin;
-    background-color: rgb(137, 137, 179);
+    display: flex;
+    justify-content: center;
 }
+
+.card img{
+    padding: 0;
+    margin: 0;
+    width: 15vmin;
+}
+
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
@@ -45,7 +53,6 @@
 
 @media only screen and (min-width: 992px) {
     .card {
-        width: 18vmin;
-        background-color: rgb(137, 137, 179);
+        width: 20vmin;
     }
 }

@@ -1,4 +1,5 @@
 import './Arena.css';
+import aryaStark from "../../media/characters/aryaStark.png"
 const Arena = () => {
 
     const myArray = [];
@@ -12,7 +13,7 @@ const Arena = () => {
 
                 <div className="game-board">
                     {myArray.map(element => (
-                        <div className="card">{element}</div>
+                        <div className="card"><img src={aryaStark} /></div>
                     ))}
 
 
